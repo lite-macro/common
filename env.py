@@ -6,16 +6,18 @@ if os.getenv('MY_PYTHON_PKG') not in sys.path:
 import syspath
 
 SQLITE_DB = os.getenv('SQLITE_DB')
-PG_PWD = os.getenv('PG_PWD')
+
+PG_PWD = os.getenv('PG_DOCKER_PWD')
 MYSQL_PWD = os.getenv('MYSQL_PWD')
-MONGO_PWD = os.getenv('MONGO_PWD')
+MONGO_PWD = os.getenv('MONGO_DOCKER_PWD')
 
-PG_PORT = int(os.getenv('PG_PORT'))
+PG_PORT = int(os.getenv('PG_DOCKER_PORT'))
 MYSQL_PORT = int(os.getenv('MYSQL_PORT'))
-MONGO_PORT = int(os.getenv('MONGO_PYTHON_PORT'))
+MONGO_PORT = int(os.getenv('MONGO_DOCKER_PORT'))
 
-PG_USER = os.getenv('PG_USER')
+PG_USER = os.getenv('PG_DOCKER_USER')
 MYSQL_USER = os.getenv('MYSQL_USER')
+MONGO_USER = os.getenv('MONGO_DOCKER_USER')
 
 pd.get_option("display.max_rows")
 pd.get_option("display.max_columns")
