@@ -7,6 +7,9 @@ import syspath
 
 SQLITE_DB = os.getenv('SQLITE_DB')
 
+PG_HOST = os.getenv('PG_HOST')
+MONGO_HOST = os.getenv('MONGO_HOST')
+
 PG_PWD = os.getenv('PG_DOCKER_PWD')
 MYSQL_PWD = os.getenv('MYSQL_PWD')
 MONGO_PWD = os.getenv('MONGO_DOCKER_PWD')
